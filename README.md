@@ -1,2 +1,2 @@
 # inception-score
-A new reimplementation of the Inception Score evaluation metric for GANs
+A new reimplementation of the Inception Score metric for evaluation of GANs
