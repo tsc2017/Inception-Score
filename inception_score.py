@@ -3,7 +3,7 @@ From https://github.com/tsc2017/inception-score
 Code derived from https://github.com/openai/improved-gan/blob/master/inception_score/model.py
 
 Args:
-    images: A numpy array with shape [N, 3, HEIGHT, WIDTH] and values ranging from -1 to 1.
+    images: A numpy array with values ranging from -1 to 1 and shape in the form [N, 3, HEIGHT, WIDTH] where N, HEIGHT and WIDTH can be arbitrary.
     splits: The number of splits of the images, default is 10.
 Returns:
     mean and standard deviation of the inception across the splits.
@@ -27,8 +27,6 @@ BATCH_SIZE=64
 inception_images=tf.placeholder(tf.float32,[BATCH_SIZE,3,None,None])
 def inception_logits(images=inception_images, num_splits=1):
     images=tf.transpose(images,[0,2,3,1])
-    # images should have shape [n, height, width, 3]
-    # Resize images.
     size = 299
     images = tf.image.resize_bilinear(images, [size, size])
     generated_images_list = array_ops.split(
