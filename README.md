@@ -3,11 +3,11 @@ Inception Score (compatible with Tensorflow 1.6+)
 While the canonical OpenAI implementation of "Inception Score" for the evaluation of generative models is no longer compatible with new releases of Tensorflow,
 a new implementation of it is provided. Also, a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) is fixed. 
 
-## Prequisites
+## Dependencies
 - `numpy` and `tensorflow-gpu`
 
 ## Features
-- Fast and memory-efficient, written in a way that is similar to the original implementation
+- Fast, easy-to-use and memory-efficient, written in a way that is similar to the original implementation
 - No prior knowledge about Tensorflow is necessary to use this code
 - Makes use of [TFGAN](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/gan)
 - Downloads InceptionV1 automatically
