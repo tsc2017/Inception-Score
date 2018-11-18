@@ -8,7 +8,7 @@ a new implementation of it is provided. Also, a bug raised in [https://github.co
 
 ## Features
 - Fast and memory-efficient, written in a way that is similar to the original implementation
-- No prior knowledge about Tensorflow is necessary
+- No prior knowledge about Tensorflow is necessary to use this code
 - Makes use of [TFGAN](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/gan)
 - Downloads InceptionV1 automatically
 - Compability with both Python2 and Python3
