@@ -1,5 +1,5 @@
 '''
-From https://github.com/tsc2017/inception-score
+From https://github.com/tsc2017/Inception-Score
 Code derived from https://github.com/openai/improved-gan/blob/master/inception_score/mode.py and https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/gan/python/eval/python/classifier_metrics_impl.py
 
 Usage:
