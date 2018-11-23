@@ -1,6 +1,6 @@
 '''
 From https://github.com/tsc2017/inception-score
-Code derived from https://github.com/openai/improved-gan/blob/master/inception_score/mode.py
+Code derived from https://github.com/openai/improved-gan/blob/master/inception_score/mode.py and https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/gan/python/eval/python/classifier_metrics_impl.py
 
 Usage:
     Call get_inception_score(images, splits=10)
@@ -71,6 +71,6 @@ def get_inception_score(images, splits=10):
     print('Calculating Inception Score with %i images in %i splits' % (images.shape[0], splits))
     start_time=time.time()
     preds = get_inception_probs(images)
-    mean,std = preds2score(preds, splits)
+    mean, std = preds2score(preds, splits)
     print('Inception Score calculation time: %f s' % (time.time() - start_time))
-    return mean,std  # Reference values: 11.34 for 49984 CIFAR-10 training set images, or mean=11.31, std=0.08 if in 10 splits.
+    return mean, std  # Reference values: 11.34 for 49984 CIFAR-10 training set images, or mean=11.31, std=0.08 if in 10 splits.
