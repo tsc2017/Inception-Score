@@ -1,4 +1,4 @@
-Inception Score (compatible with Tensorflow 1.6+)
+Inception Score
 =====================================
 While the canonical OpenAI implementation of "Inception Score" for the evaluation of generative models is no longer compatible with new releases of Tensorflow,
 a new implementation of it is provided. Also, a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) is fixed. 
