@@ -4,11 +4,11 @@ While the canonical OpenAI implementation of "Inception Score" for the evaluatio
 a new implementation of it is provided. Also, a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) is fixed. 
 
 ## Dependencies
-- `numpy` and `tensorflow-gpu`
+- `numpy` and `tensorflow-gpu>=1.14`
 
 ## Features
 - Fast, easy-to-use and memory-efficient, written in a way that is similar to the original implementation
-- No prior knowledge about Tensorflow is necessary to use this code
+- No prior knowledge about Tensorflow is necessary
 - Makes use of [TFGAN](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/gan)
 - Downloads InceptionV1 automatically
 - Compatible with both Python 2 and Python 3
