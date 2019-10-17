@@ -8,8 +8,8 @@ A new Tensorflow implementation of the "Inception Score" (IS) for the evaluation
 
 ## Features
 - Fast, easy-to-use and memory-efficient, written in a way that is similar to the original implementation
-- No prior knowledge about Tensorflow is necessary
-- Makes use of [TFGAN](https://github.com/tensorflow/gan)
+- No prior knowledge about Tensorflow is necessary if your are using CPU or GPU
+- Makes use of [TF-GAN](https://github.com/tensorflow/gan)
 - Downloads InceptionV1 automatically
 - Compatible with both Python 2 and Python 3
 
