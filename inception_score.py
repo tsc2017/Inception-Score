@@ -43,7 +43,7 @@ def inception_logits(images = inception_images, num_splits = 1):
              os.path.basename(INCEPTION_URL)), 
              output_tensor = 'logits:0'),
         elems = array_ops.stack(generated_images_list),
-        parallel_iterations = 1,
+        parallel_iterations = 8,
         back_prop = False,
         swap_memory = True,
         name = 'RunClassifier')
