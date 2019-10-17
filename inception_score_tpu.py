@@ -3,7 +3,7 @@ From https://github.com/tsc2017/Inception-Score
 Code derived from https://github.com/openai/improved-gan/blob/master/inception_score/model.py and https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/gan/python/eval/python/classifier_metrics_impl.py
 
 Usage:
-    Call get_inception_score(images, splits=10)
+    Call get_inception_score(images, splits=10, session=YOUR_SESSION, strategy=YOUR_TPUSTRATEGY)
 Args:
     images: A numpy array with values ranging from 0 to 255 and shape in the form [N, 3, HEIGHT, WIDTH] where N, HEIGHT and WIDTH can be arbitrary. A dtype of np.uint8 is recommended to save CPU memory.
     splits: The number of splits of the images, default is 10.
