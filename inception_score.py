@@ -65,16 +65,6 @@ def preds2score(preds, splits=10):
     scores = []
     for i in range(splits):
         part = preds[(i * preds.shape[0] // splits):((i + 1) * preds.shape[0] // splits), :]
-        q = np.expand_dims(np.mean(part, 0), 0)
-        kl = part * (np.log(part / q)) + (1 - part) * np.log((1 - part) / (1 - q))
-        kl = np.mean(kl)
-        scores.append(np.exp(kl))
-    return np.mean(scores), np.std(scores)
-
-def preds2score(preds, splits=10):
-    scores = []
-    for i in range(splits):
-        part = preds[(i * preds.shape[0] // splits):((i + 1) * preds.shape[0] // splits), :]
         kl = part * (np.log(part) - np.log(np.expand_dims(np.mean(part, 0), 0)))
         kl = np.mean(np.sum(kl, 1))
         scores.append(np.exp(kl))
