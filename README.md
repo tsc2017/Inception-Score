@@ -1,7 +1,7 @@
 Inception Score
 =====================================
 
-A new Tensorflow implementation of the "Inception Score" (IS) for the evaluation of generative models with a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) fixed. 
+A new Tensorflow implementation of the "Inception Score" (IS) for the evaluation of generative models, with a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) fixed. 
 
 ## Major Dependency
 - `tensorflow >= 1.14`
