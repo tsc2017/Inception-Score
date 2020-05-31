@@ -1,11 +1,11 @@
 Inception Score
 =====================================
 
-A new Tensorflow implementation of the "Inception Score" (IS) for the evaluation of generative models, with a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) fixed. 
+Tensorflow implementation of the "Inception Score" (IS) for the evaluation of generative models, with a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) fixed. 
 
-## Major Dependency
-- `tensorflow >= 1.14`
-
+## Major Dependencies
+- `tensorflow >= 1.14` 
+- `tensorflow-gan >= 2.0.0` (necessary if you are using Tensorflow 2)
 ## Features
 - Fast, easy-to-use and memory-efficient, written in a way that is similar to the original implementation
 - No prior knowledge about Tensorflow is necessary if your are using CPU or GPU
@@ -18,6 +18,9 @@ A new Tensorflow implementation of the "Inception Score" (IS) for the evaluation
 - Call `get_inception_score(images, splits=10)`, where `images` is a numpy array with values ranging from 0 to 255 and shape in the form `[N, 3, HEIGHT, WIDTH]` where `N`, `HEIGHT` and `WIDTH` can be arbitrary. `dtype` of the images is recommended to be `np.uint8` to save CPU memory.
 - A smaller `BATCH_SIZE` reduces GPU/TPU memory usage, but at the cost of a slight slowdown.
 - If you want to compute a general "Classifier Score" with probabilities `preds` from another classifier, call `preds2score(preds, splits=10)`. `preds` can be a numpy array of arbitrary shape `[N, num_classes]`.
+## Example
+[![Example In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hgJJI5wuILxcHsmrkZMkHJtk6uDlKOwr?usp=sharing)
+
 ## Links
 - The Inception Score was proposed in the paper [Improved Techniques for Training GANs](https://arxiv.org/abs/1606.03498)
 - Code for the [Fréchet Inception Distance](https://github.com/tsc2017/Frechet-Inception-Distance)
