@@ -5,7 +5,7 @@ Tensorflow implementation of the "Inception Score" (IS) for the evaluation of ge
 
 ## Major Dependencies
 - `tensorflow==1.14` or `tensorflow>=2`
-- `tensorflow-gan>=2.0.0` (necessary only if you are using Tensorflow 2)
+- `tensorflow-gan>=2.0.0` (necessary only if you are using TensorFlow 2)
 ## Features
 - Fast, easy-to-use and memory-efficient, written in a way that is similar to the original implementation
 - No prior knowledge about Tensorflow is necessary if your are using CPUs or GPUs
