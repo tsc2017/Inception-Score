@@ -20,7 +20,6 @@ import time
 from tensorflow.python.ops import array_ops
 # pip install tensorflow-gan
 import tensorflow_gan as tfgan
-session=tf.compat.v1.InteractiveSession()
 # A smaller BATCH_SIZE reduces TPU memory usage, but at the cost of a slight slowdown
 BATCH_SIZE = 1000
 INCEPTION_TFHUB = 'https://tfhub.dev/tensorflow/tfgan/eval/inception/1'
