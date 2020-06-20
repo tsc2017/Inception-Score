@@ -18,7 +18,10 @@ import numpy as np
 import time
 from tensorflow.python.ops import array_ops
 tfgan = tf.contrib.gan
-session=tf.compat.v1.InteractiveSession()
+if float('.'.join(tf.__version__.split('.')[:2])) < 1.15:
+    tfgan = tf.contrib.gan
+else:
+    import tensorflow_gan as tfgan
 # A smaller BATCH_SIZE reduces GPU memory usage, but at the cost of a slight slowdown
 BATCH_SIZE = 8
 INCEPTION_URL = 'http://download.tensorflow.org/models/frozen_inception_v1_2015_12_05_v4.tar.gz'
