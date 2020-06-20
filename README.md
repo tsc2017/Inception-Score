@@ -4,7 +4,7 @@ Inception Score
 Tensorflow implementation of the "Inception Score" (IS) for the evaluation of generative models, with a bug raised in [https://github.com/openai/improved-gan/issues/29](https://github.com/openai/improved-gan/issues/29) fixed. 
 
 ## Major Dependencies
-- `tensorflow == 1.14` or (`tensorflow>=1.15, <2` and `tensorflow-gan==1.0.0.dev0`) or (`tensorflow>=2` and `tensorflow-gan>=2.0.0`)
+- `tensorflow==1.14` or (`tensorflow==1.15` and `tensorflow-gan==1.0.0.dev0`) or (`tensorflow>=2` and `tensorflow-gan>=2.0.0`)
 ## Features
 - Fast, easy-to-use and memory-efficient, written in a way that is similar to the original implementation
 - No prior knowledge about Tensorflow is necessary if your are using CPUs or GPUs
